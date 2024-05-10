@@ -1,0 +1,11 @@
+<div class="main-container">
+
+    <!-- search bar component -->
+    <app-search></app-search>
+    
+    <!-- current weather component -->
+    <app-current-weather [searchCity]="weatherService.searchCity" ></app-current-weather>
+
+    <!-- forecast weather component -->
+    <app-forecast-weather [searchCity]="weatherService.searchCity"></app-forecast-weather>
+</div>

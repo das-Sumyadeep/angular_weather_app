@@ -1,0 +1,19 @@
+<h2>{{currentData.location.name}} | {{currentData.location.region}} | {{currentData.location.country}}</h2>
+<p>{{currentDate}} {{is_day ? "PM" : "AM"}}</p>
+<div class="current-component">
+
+
+    <div class="weather-image">
+        <img src={{currentData.current.condition.icon}} alt="random" />
+        <p>{{currentData.current.condition.text}}</p>
+    </div>
+
+    <div class="current-info">
+        <h2>{{currentData.current.temp_c + '°C'}}</h2>
+    </div>
+
+    <div class="weather-info">
+        <p>Wind Speed: {{currentData.current.wind_kph + ' km/hr'}}</p>
+        <p>Humidity: {{currentData.current.humidity + '%'}}</p>
+    </div>
+</div>

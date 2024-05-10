@@ -1,0 +1,15 @@
+
+    <div class="forecast-component">
+        <div *ngFor="let x of foreCast; let i = index" >
+            <div class="forecast" >
+                <p>{{currDate[i]}}</p>
+                <div class="forecast-image">
+                    <img src={{x.day.condition.icon}} alt="random" />
+                </div>
+                <p >{{x.hour[0].temp_c + '°C'}}</p>
+                <p >Low: {{x.day.mintemp_c + '°C'}}</p>
+                <p >High: {{x.day.maxtemp_c + '°C'}}</p>
+            </div>
+        </div>
+    </div>
+

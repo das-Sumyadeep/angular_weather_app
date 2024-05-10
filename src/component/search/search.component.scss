@@ -1,0 +1,48 @@
+.search-component{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+    label{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 600;
+    }
+    .searchBar{
+        
+        width: 100%;
+        padding: 0.5rem 1.3rem;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+    }
+
+    .btn{
+        background-color: rgb(206, 71, 71);
+        color: aliceblue;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 0.8rem 0.5rem;
+        outline: none;
+        border-radius: 0.3rem;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 667px) {
+    
+    .search-component{
+        width: 80%;
+        margin: 0 auto;
+        label{
+            font-size: 1.2rem;
+        }
+        .searchBar{
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+        }
+    
+    }
+}
